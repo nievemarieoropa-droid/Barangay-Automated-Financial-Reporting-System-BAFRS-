@@ -50,7 +50,7 @@ Semicolons: Explicitly write trailing semicolons ; at the completion of every lo
 Line Limits: Keep active script strings under 80 characters per line to ensure text remains readable without requiring continuous horizontal scrolling.
 
 
-###3. Commenting Standards
+**###3. Commenting Standards**
 Comments must clarify why something is built a certain way, rather than tracking what a basic command executes. Code blocks should be clean and readable without overwhelming the files with unnecessary text.
 
 Single-Line Logic Clarifications (//)
@@ -79,7 +79,7 @@ function attachDigitalReceipt(receiptFile, trackingId) {
 }
 
 
-####4. Git Branch Naming Conventions
+**####4. Git Branch Naming Conventions**
 To keep our version control system organized, branches must never use generic titles like test or updates. All branches must follow a distinct prefix-based naming structure.
 
 Branch Name Formats
