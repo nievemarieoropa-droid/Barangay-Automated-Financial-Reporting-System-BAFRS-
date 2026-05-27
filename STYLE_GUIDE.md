@@ -32,6 +32,17 @@ Code clarity is foundational to ensuring readable logic scripts. We use standard
 ### Indentation and Spacing
 * **Rule:** Use **2 spaces** per indentation level. Do not mix spaces and manual tabs.
 * **Brace Layouts:** Use the standard Egyptian brace format. Open curly brackets `{` on the same line as the statement declaration, and place closing brackets `}` on a fresh line aligned with the root statement.
+* ```javascript
+// Correct Formatting Example
+function logTransaction(entryAmount) {
+  if (entryAmount <= 0) {
+    console.error("Invalid transaction entry amount.");
+    return false;
+  }
+  
+  return true;
+}
+  
 checkout -b feature/your-feature-name.
 
 Semicolons and Line Lengths
@@ -39,7 +50,7 @@ Semicolons: Explicitly write trailing semicolons ; at the completion of every lo
 
 Line Limits: Keep active script strings under 80 characters per line to ensure text remains readable without requiring continuous horizontal scrolling.
 
-3. Commenting Standards
+# 3. Commenting Standards
 Comments must clarify why something is built a certain way, rather than tracking what a basic command executes. Code blocks should be clean and readable without overwhelming the files with unnecessary text.
 
 Single-Line Logic Clarifications (//)
@@ -49,10 +60,23 @@ Correct: ```javascript
 // Deduct total operational expenditures from verified collections to compute net cash position
 const totalRemainingBalance = currentRevenueSummary - runningExpenseTotal;
 
+Incorrect:
+*const totalRemainingBalance = currentRevenueSummary - runningExpenseTotal; // subtracts expense from revenue
+
 Block Documentation (/ ... */)
 Every custom-defined integration module, calculation engine, and internal database routing function must be introduced with a descriptive header block detailing inputs and expected outputs.
 
-4. Git Branch Naming Conventions
+/**
+ * Processes uploaded digital receipts and binds them to an expense log.
+ * @param {File} receiptFile - The PDF or image file submitted by the user.
+ * @param {number} trackingId - The specific ledger identification key.
+ * @returns {boolean} Returns true if the file upload and database link are successful.
+ */
+function attachDigitalReceipt(receiptFile, trackingId) {
+  // Logic goes here
+}
+
+# 4. Git Branch Naming Conventions
 To keep our version control system organized, branches must never use generic titles like test or updates. All branches must follow a distinct prefix-based naming structure.
 
 Branch Name Formats
