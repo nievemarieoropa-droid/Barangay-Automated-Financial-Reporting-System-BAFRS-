@@ -80,16 +80,14 @@ function attachDigitalReceipt(receiptFile, trackingId) {
 To keep our version control system organized, branches must never use generic titles like test or updates. All branches must follow a distinct prefix-based naming structure.
 
 Branch Name Formats
-New Application Features: feature/short-description
 
+New Application Features: feature/short-description
 Example: feature/secure-login, feature/receipt-upload
 
 Bug Patches and Fixes: bugfix/short-description
-
 Example: bugfix/arithmetic-error, bugfix/button-alignment
 
 Documentation Refactoring: docs/short-description
-
 Example: docs/update-user-manual, docs/readme-cleanup
 
 Branch Processing Flow
