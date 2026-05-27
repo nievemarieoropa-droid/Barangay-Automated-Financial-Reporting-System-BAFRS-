@@ -44,13 +44,14 @@ function logTransaction(entryAmount) {
   return true;
 }
 
+
 Semicolons and Line Lengths
 Semicolons: Explicitly write trailing semicolons ; at the completion of every logical statement or function return.
 
 Line Limits: Keep active script strings under 80 characters per line to ensure text remains readable without requiring continuous horizontal scrolling.
 
 
-3. Commenting Standards
+## 3. Commenting Standards
 Comments must clarify why something is built a certain way, rather than tracking what a basic command executes. Code blocks should be clean and readable without overwhelming the files with unnecessary text.
 
 Single-Line Logic Clarifications (//)
